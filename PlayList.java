@@ -82,6 +82,7 @@ class PlayList {
     public int indexOf(String title) {
         //// replace the following statement with your code
         for(int i = 0; i < size; i++){
+            // #feedback - you should ignore upper/lower case.
             if(tracks[i].getTitle() == title){
                 return i;
             }
@@ -137,6 +138,7 @@ class PlayList {
          if (size == 0) {
             return;
         }
+        // #feedback - you can use indexOf method to get the index of the track, and then remove it (if it's not -1).
         String lowercaseTitle = title.toLowerCase();
 
         for (int i = 0; i < size; i++) {
@@ -151,6 +153,7 @@ class PlayList {
 
     /** Removes the first track from this list. If the list is empty, does nothing. */
     public void removeFirst() {
+        // #feedback - you can use the remove method with index 0.
         int i = 0;
         if (size > 0) {
 
